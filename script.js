@@ -2,7 +2,7 @@ const body_page_result = document.getElementById('body_page_result');
 const form_box = document.getElementById('form_box');
 const input_box = document.getElementById('input_box');
 const search_more = document.getElementById('search_more');
-const userkey ="WZJuEYz-hh2QCbWsjJlnU2pNOkmP_bkTwkEZ3atisgY"
+const userkey ="WZJuEYz-hh2QCbWsjJlnU2pNOkmP_bkTwkEZ3atisgY";
 let keyword ="";
 let pack = 1;
 
@@ -22,13 +22,15 @@ window.onload = async function(){
             imgeContainer.classList.add("image-container");
         const imge = document.createElement("img");
         imge.src = res.urls.regular;
+
         const imglink = document.createElement("a");
         imglink.href= res.links.download;
         imglink.target = "_blank";
+
         const downlode = document.createElement("a");
         downlode.classList.add("downlode_key");
-
         downlode.innerHTML = "view";
+
         downlode.href = res.links.html;
         imglink.appendChild(downlode);
 
@@ -37,6 +39,8 @@ window.onload = async function(){
         body_page_result.appendChild(imgeContainer);
   })
 }
+
+
 
 async function getdatails(){
     keyword = input_box.value;
@@ -63,8 +67,9 @@ async function getdatails(){
       
         const downlode = document.createElement("a");
         downlode.classList.add("downlode_key");
-
         downlode.innerHTML = "view";
+
+
         downlode.href = res.links.html;
         imglink.appendChild(downlode);
         imglink.appendChild(imge);
@@ -113,4 +118,6 @@ const my_details = document.getElementById('my_details');
   }).catch((error)=>{
     console.log(error);
   })
-
+   function showAlert(message){
+      alert(message);
+   }

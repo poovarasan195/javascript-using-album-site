@@ -158,15 +158,15 @@ button:hover {
 }
 
 #my_details h3 {
-    margin: 0; /* Remove default margin */
+    margin: 0; 
 }
 
 #my_details span {
-    color: #666; /* Set color for bio */
+    color: #666; 
 }
 /*footer*/
 .footer {
-    background-color: rgb(114, 75, 3);
+    background-color: rgba(114, 75, 3, 0.514);
     display: flex;
     justify-content: space-around;
     padding: 20px;
@@ -188,6 +188,7 @@ button:hover {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+    font-size: 25px;
 }
 
 .footer ul li img {
@@ -197,12 +198,14 @@ button:hover {
 }
 .footer ul li a{
     text-decoration: none;
+    text-decoration: underline;
     color: rgba(255, 255, 255, 0.596);
+    font-size: 25px;
     font-weight: 900;
 }
 
 .footer h4 {
-    color: rgba(255, 166, 0, 0.39);
+    color: rgba(243, 241, 236, 0.39);
     margin-bottom: 10px;
 }
 .logo_name{
@@ -210,4 +213,11 @@ button:hover {
   font-family: Arial, Helvetica, sans-serif;
   color: #666;
   font-size: 40px;
+}
+.line{
+    color: #66666693;
+    font-size: 15px;
+    position: absolute;
+    right: 20px;
+    margin-top: 13%;
 }
